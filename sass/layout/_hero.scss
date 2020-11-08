@@ -1,0 +1,164 @@
+.hero{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  
+
+  &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+  }
+
+  &__img{
+      object-fit: cover;
+      height: 100vh;
+      width: 100%;
+      display: block;
+  }
+
+  &__content{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 2;
+  }
+
+  &__center{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  &__scroll{
+      position: absolute;
+      bottom: 0px;
+      right: 30px;
+      z-index: 2;
+      border-right: 2px solid #39b54a;
+      height: 60px;
+  }
+
+  &__social{
+      display: none;
+  }
+
+
+  &__scroll-btn{
+      text-transform: uppercase;
+      font-size: .5rem;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 2px;
+      position: relative;
+      top: -10px;
+      right: 2px;
+      
+      &:before{
+          content: "\f078";
+          font-family: icomoon;
+          font-weight: 100;
+          margin-right: 10px;
+          color: #39b54a;
+          font-size: .6rem;
+      }
+  }
+}
+
+// <----HEADING---->
+
+.heading{
+  text-align: center;
+
+  &--contact{
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  &__main{
+      font-size: 1.7rem;
+      font-weight: 600;
+      position: relative;
+      padding: .5rem 0;
+
+      &:after{
+          content: "";
+          position: absolute;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          height: 1px;
+          width: 250px;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      &--hero{
+          font-size: 1.875rem;
+          font-weight: 500;
+          line-height: 2.5rem;
+
+          &:after{
+              display: none;
+          }
+      }
+
+      &--about{
+          color: #fff;
+          font-size: 3rem;
+
+          &:after{
+              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          }
+      }
+
+      &--do{
+          &:after{
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          }
+      }
+
+      &--works,
+      &--contact{
+          color: #fff;
+      }
+
+      &--hero,
+      &--clients,
+      &--contact{
+          &:after{
+              display: none;
+          }
+      }
+  }
+
+  &__sub{
+      color: #39b54a;
+      font-size: .875rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &--hero{
+          color: #828282;
+          text-transform: uppercase;
+          letter-spacing: .3rem;
+          font-weight: 500;
+          font-size: .8rem;
+      }
+
+      &--about{
+          color: #000;
+      }
+      
+  }
+}

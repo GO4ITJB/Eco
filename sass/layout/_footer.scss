@@ -1,0 +1,32 @@
+.footer{
+  background-color: $black;
+  padding: 4rem 0;
+  font-family: 'Montserrat', sans-serif;
+
+  &__heading{
+      font-size: 2rem;
+      font-weight: 600;
+      color: $white;
+      text-align: center;
+      
+  }
+
+  &__heading-sub{
+      color: $white;
+      font-size: .875rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: .8rem;
+  }
+
+  &__text{
+      line-height: 2;
+      padding: 2rem 0;
+      color: #575757;
+      font-size: .9rem;
+
+      &--copyright{
+          text-align: center;
+      }
+  }
+}

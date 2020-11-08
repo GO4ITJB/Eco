@@ -1,0 +1,59 @@
+.about{
+
+  &__list{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+}
+
+.do{
+
+  &__list{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-gap: 20px 60px;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 1440px){
+  
+  .contact{
+
+      &__content{
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          width: 70%;
+          margin: 0 auto;
+      }
+      
+      &__form-box{
+          grid-column: 2 / 4;
+      }
+  }
+
+  .footer{
+
+      &__items{
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          grid-gap: 20px 50px;
+      }
+  
+      &__item{
+  
+          &--3{
+              grid-column: 1 / span 2;
+          }
+      }
+  }
+}
